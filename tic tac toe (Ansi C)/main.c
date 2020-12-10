@@ -36,7 +36,8 @@ int CheckResults(int board[3][3]) {
 
             if(i == u)
                 dSum[0] += board[i][u];
-            else if(i + u == 2)
+            
+            if(i + u == 2)
                 dSum[1] += board[i][u];
 
         }
